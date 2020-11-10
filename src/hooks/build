@@ -1,2 +1,3 @@
 #!/bin/bash
-docker build $DOCKERFILE_PATH --build-arg VERSION=$LOGSTASH_VERSION -t $IMAGE_NAME
+echo "=> Building the binary with params: VERSION=$LOGSTASH_VERSION Image=$IMAGE_NAME Dockerfile=$DOCKERFILE_PATH"
+docker build --build-arg VERSION=$LOGSTASH_VERSION -f $DOCKERFILE_PATH -t $IMAGE_NAME
