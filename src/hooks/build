@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "==> Building the binary with params:"
-echo "==> VERSION=$LOGSTASH_VERSION"
-echo "==> IMAGE_NAME=$IMAGE_NAME"
-echo "==> Image=logstash-date-formatter:$LOGSTASH_VERSION"
-echo "==> Dockerfile=$DOCKERFILE_PATH"
-docker build --build-arg VERSION=$LOGSTASH_VERSION $DOCKERFILE_PATH
