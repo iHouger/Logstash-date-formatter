@@ -1,4 +1,4 @@
-ARG VERSION=latest
+ARG VERSION=7.9.3
 FROM docker.elastic.co/logstash/logstash:${VERSION}
 
 # Install Plugins
